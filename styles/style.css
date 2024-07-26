@@ -19,33 +19,44 @@ body {
     /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
 }
 
+
 .container {
-    width: 80%;
-    margin: 5rem auto;
+    max-width: 80%;
+    /* margin: 5rem auto; */
+    /* margin: 0 auto; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
 
 }
 
 p {
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-    line-height: 1.5;
     color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
     font-weight: 400;
-    text-align: left;
-
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
 }
 
 h3,
 h1,
 h2,
-h4 {
+h4,
+h5 {
     font-size: 2rem;
     font-weight: 800;
-    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .fitness {
     color: rgb(230, 83, 60);
+    font-style: italic;
 }
 
 .btn {
@@ -57,17 +68,24 @@ h4 {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
+    border: none;
 }
 
 /* Common styles */
 
 /* Nav bar styles  */
 
+.header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
 .nav-bar {
+    margin: 0;
+    padding: 0 8rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 
 }
 
@@ -85,10 +103,12 @@ h4 {
 .nav-links p {
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
 }
+
 
 .nav-home {
     border-radius: 20px;
@@ -108,6 +128,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .banner-text {
@@ -119,6 +140,7 @@ h4 {
     color: rgb(255, 255, 255);
     font-size: 78px;
     font-weight: 900;
+    line-height: 5rem;
 }
 
 .banner-text p {
@@ -127,7 +149,7 @@ h4 {
 
 .span {
     font-family: miama;
-    font-size: 50px;
+    font-size: 8rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
@@ -135,6 +157,8 @@ h4 {
 .banner-btn {
     display: flex;
     justify-self: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .btn-black {
@@ -147,10 +171,8 @@ h4 {
     justify-content: flex-end;
 }
 
-.card-pos{
-    display: flex;
-    justify-content: flex-end;
-    padding-top: -75px;
+.banner-image {
+    position: relative;
 }
 
 .card1 {
@@ -160,6 +182,10 @@ h4 {
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 0 20px 20px;
+
+    position: absolute;
+    top: 25%;
+    right: -15%;
 
 }
 
@@ -189,6 +215,9 @@ h4 {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
+    position: absolute;
+    bottom: 15%;
+    left: -25%;
 
 }
 
@@ -213,3 +242,75 @@ h4 {
 
 
 /* Banner section styles */
+
+/* change habits styles */
+.change-habit {
+    margin-top: 6.25rem;
+}
+
+.habit {
+    text-align: center;
+
+}
+
+.habit-h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+
+/* change habits styles */
+
+/* run extra mile styles */
+
+.run {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 160px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+
+.run-content {
+    padding-top: 40px;
+    padding-left: 50px;
+
+}
+
+.run-content h2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+.run-content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.run img {
+    border-radius: 18px;
+    width: 70%;
+    /* height: 20%; */
+    /* height: 320px; */
+    /* object-fit: cover; */
+    /* object-position: 70% top; */
+
+}
+
+.run-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+/* run extra mile styles */
