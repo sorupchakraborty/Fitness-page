@@ -24,6 +24,9 @@
                 <p>Contact</p>
                 <p id="nav-link-last-child">About</p>
             </div>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
         <!-- navbar section  -->
         <!-- banner section  -->
@@ -34,7 +37,8 @@
                     <p>A huge selection of health and fitness content, healthy recipes and transformation stories to
                         help you get fit and stay fit!</p>
                     <div class="banner-btn">
-                        <button class="btn">Join Club Now!</button>
+                        <button class="btn btn-red1">Join Club Now!</button>
+                        <button class="btn btn-red">Join Now!</button>
                         <button class="btn btn-black">Download App</button>
                     </div>
                 </div>
@@ -70,12 +74,36 @@
                 </p>
             </div>
             <div>
-                <div>
+                <div class="habit-card">
                     <div>
-                        <img src="./images/image 3.png" alt="">
+                        <div>
+                            <img class="habit-img1" src="./images/image 3.png" alt="">
+                        </div>
+                        <h6>Movement</h6>
+                        <p>We believe fitness should be accessible to everyone</p>
                     </div>
-                    <h5>Movement</h5>
-                    <p>We believe fitness should be accessible to everyone</p>
+                    <div>
+                        <div>
+                            <img class="habit-img1" src="./images/image 2.png" alt="">
+                        </div>
+                        <h6>Time</h6>
+                        <p>We believe fitness should be accessible to everyone</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="habit-img1" src="./images/image 4.png" alt="">
+                        </div>
+                        <h6>Practice</h6>
+                        <p>We believe fitness should be accessible to everyone</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="habit-img1" src="./images/image 5.png" alt="">
+                        </div>
+                        <h6>Weight Loss</h6>
+                        <p>We believe fitness should be accessible to everyone</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -90,13 +118,80 @@
                     Mile Easily</h2>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a
                     gym. With hundreds of professional workouts.</p>
-                <button class="btn run-btn">Join Now</button>
+                <button class="btn">Join Now</button>
             </div>
             <div class="run-img">
                 <img src="./images/run.jpg" alt="">
             </div>
         </section>
         <!-- Run extra mile section -->
+
+        <!-- bmi calculator -->
+
+        <section class="container bmi-header">
+            <h2>BMI Calculator</h2>
+            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
+            </p>
+        </section>
+        <section class="bmi">
+            <div class="bmi-table">
+                <h4>BMI Calculator Chart</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>BMI </th>
+                            <th>Weight Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="bmi-calculator">
+                <h4>Calculate your BMI</h4>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a
+                    gym.</p>
+                <form class="bmi-cal-content">
+                    <input type="text" placeholder="Height/cm">
+                    <input type="text" placeholder="Weight/kg">
+                    <input type="text" placeholder="Age">
+                    <select>
+                        <option value="">Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <select>
+                        <option value="">Select an activity factor</option>
+                        <option value="sedentary">Sedentary</option>
+                        <option value="light">Light activity</option>
+                        <option value="moderate">Moderate activity</option>
+                        <option value="active">Active</option>
+                        <option value="very-active">Very active</option>
+                    </select>
+                    <button class="btn" type="submit">Calculate</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- bmi calculator -->
 
     </main>
     <footer>
