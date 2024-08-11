@@ -666,9 +666,18 @@ select {
 
     }
 
+    .bmi-text {
+        width: 25rem;
+    }
+
 
     .bmi-calculator {
         /* max-width: 35rem; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bmi-calculator h4 {
@@ -719,9 +728,107 @@ select {
 
 /* Meet our team  */
 
+.team-header {
+    text-align: center;
+}
+
+.team-card {
+    width: 325px;
+
+}
+
+.team-wrapper {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(3, 1rem);
+    row-gap: 2rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-card-img1 {
+    background: url(..//images/trainer1.png);
+    width: 85%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    position: relative;
+}
+
+.team-card-img2 {
+    background: url(..//images/trainer2.png);
+    width: 85%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    position: relative;
+}
+
+.team-card-img3 {
+    background: url(..//images/trainer3.png);
+    width: 85%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    position: relative;
+}
+
+.team-card-img4 {
+    background: url(..//images/trainer4.png);
+    width: 85%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    position: relative;
+}
+
+.team-card-img5 {
+    background: url(..//images/trainer5.png);
+    width: 85%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    position: relative;
+}
+
+.team-card-img6 {
+    background: url(..//images/trainer6.png);
+    width: 85%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    position: relative;
 
 
+}
 
+.team-text {
+    position: absolute;
+    top: 12rem;
+    left: 1rem;
+}
+
+.team-text h5 {
+    font-size: 20px;
+}
+
+.team-text p {
+    font-size: 13px;
+}
 
 
 /* Meet our team  */
+
+
+/* Footer styles */
+
+
+
+/* Footer styles */
