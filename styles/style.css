@@ -284,12 +284,6 @@ h5 {
     display: none;
 }
 
-/* @media screen and (max-width: 576px) {
-    .banner {
-        display: flex;
-        flex-direction: column;
-    }
-} */
 
 @media screen and (max-width: 576px) {
     .btn {
@@ -370,14 +364,22 @@ h5 {
         padding: 15px 0 15px 15px;
 
         position: absolute;
-        top: 30%;
-        right: -15%;
+        top: 9%;
+        right: -8%;
 
     }
 
     .card1 p {
         font-size: 10px;
     }
+
+    .card2 {
+        width: 11rem;
+        bottom: 38%;
+        left: -7%;
+
+    }
+
 }
 
 /* Banner section styles */
@@ -427,15 +429,9 @@ h5 {
 
 @media screen and (max-width: 576px) {
     .habit-card {
-        max-width: 14.5rem;
-        text-align: center;
-        display: grid;
-        justify-content: space-between;
-        align-items: center;
         grid-template-columns: repeat(1, 14.5rem);
-        /* grid-template-rows: repeat(1); */
-        gap: 2.5rem;
-        padding-left: 6rem;
+        justify-items: center;
+        padding: 4rem;
     }
 
 }
@@ -494,11 +490,46 @@ h5 {
     padding: 80px 0;
 }
 
+/* run extra mile responsive */
+
+@media screen and (max-width: 576px) {
+    .run {
+
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .run-content h2 {
+        font-size: 35px;
+    }
+
+    .run-content p {
+
+        font-size: 14px;
+    }
+
+    .run-img {
+        padding: 45px 0;
+    }
+
+    .run img {
+        width: 85%;
+    }
+
+    .btn-res {
+        max-width: 300px;
+        padding: 13px 80px;
+    }
+
+}
+
+
+
 /* run extra mile styles */
 
 /* bmi calculator */
 .bmi-header {
-    text-align: center;
+    text-align: start;
 
 }
 
@@ -623,13 +654,74 @@ select {
 
 @media screen and (max-width: 576px) {
     .bmi {
-        background: rgb(34, 34, 34);
-        display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
     }
+
+    .bmi-header {
+        text-align: start;
+    }
+
+    .bmi-header h2 {
+        font-size: 35px;
+
+    }
+
+
+    .bmi-calculator {
+        /* max-width: 35rem; */
+    }
+
+    .bmi-calculator h4 {
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+        font-weight: 900;
+        text-align: left;
+        padding-bottom: 0.5rem;
+
+    }
+
+    .bmi-calculator p {
+        padding-bottom: 2rem;
+    }
+
+    .bmi-cal-content input[type="text"]:nth-child(1) {
+        grid-column: span 1;
+        max-width: 170px;
+    }
+
+    .bmi-cal-content input[type="text"]:nth-child(2) {
+        grid-column: span 1;
+        max-width: 170px;
+    }
+
+    .bmi-cal-content input[type="text"]:nth-child(3) {
+        grid-column: span 1;
+        max-width: 170px;
+    }
+
+    .bmi-cal-content select:nth-child(4) {
+        grid-column: span 1;
+        max-width: 170px;
+
+    }
+
+    .bmi-cal-content select:nth-child(5) {
+        grid-column: span 2;
+        max-width: 350px;
+    }
+
+
 }
 
 
 /* bmi calculator */
+
+
+/* Meet our team  */
+
+
+
+
+
+
+/* Meet our team  */
