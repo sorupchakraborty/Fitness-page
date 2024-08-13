@@ -578,18 +578,12 @@ h5 {
 
 }
 
-table,
-th,
-td {
+table,td,th{
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
 
 }
 
-/* 
-form {
-    display: flex;
-    flex-direction: column;
-} */
 
 input[type="text"],
 select {
@@ -953,9 +947,9 @@ footer {
 .footer-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 0;
     padding: 5rem;
+    gap: 30px;
 }
 
 .footer-content h5 {
@@ -978,14 +972,18 @@ footer {
     padding: 2rem;
 }
 
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 
 @media screen and (max-width: 576px) {
     .footer-section {
-        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
     }
 
     .fit-text {
