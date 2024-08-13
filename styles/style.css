@@ -114,27 +114,6 @@ h5 {
 }
 
 /* Nav bar responsive */
-/* 
-@media screen and (max-width: 576px) {
-    .nav-bar {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .bars {
-        display: block;
-        color: rgb(255, 255, 255);
-    }
-
-} */
-
-/* Nav bar responsive */
 @media screen and (max-width: 576px) {
     .nav-links {
         display: none;
@@ -424,9 +403,14 @@ h5 {
 
 @media screen and (max-width: 576px) {
     .habit-card {
-        grid-template-columns: repeat(1, 14.5rem);
+        grid-template-columns: repeat(1, 12rem);
         justify-items: center;
         padding: 4rem;
+        margin: 0 auto;
+    }
+
+    .habit {
+        padding-bottom: 0;
     }
 
 }
@@ -494,6 +478,10 @@ h5 {
         gap: 0;
     }
 
+    .run-content {
+        padding-left: 30px;
+    }
+
     .run-content h2 {
         font-size: 35px;
     }
@@ -501,6 +489,8 @@ h5 {
     .run-content p {
 
         font-size: 14px;
+        max-width: 80%;
+
     }
 
     .run-img {
@@ -541,7 +531,7 @@ h5 {
 }
 
 .bmi table {
-    width: 22rem;
+    max-width: 20rem;
     text-align: start;
     /* margin: 20px; */
     /* margin-bottom: 10rem; */
@@ -640,12 +630,6 @@ select {
     grid-column: span 2;
 }
 
-/* .bmi-cal-content button {
-    grid-column: span 2;
-    width: 100%;
-}
- */
-
 
 @media screen and (max-width: 576px) {
     .bmi {
@@ -661,57 +645,66 @@ select {
 
     }
 
-    .bmi-text {
-        width: 25rem;
-    }
-
-
     .bmi-calculator {
-        /* max-width: 35rem; */
+        /* max-width: 25rem; */
         /* margin-left: auto;
         margin-right: auto; */
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 2rem;
     }
 
     .bmi-calculator h4 {
         color: rgb(255, 255, 255);
-        font-size: 28px;
-        font-weight: 900;
+        font-size: 20px;
+        padding-top: 2rem;
         text-align: left;
-        padding-bottom: 0.5rem;
-
     }
 
-    .bmi-calculator p {
+    .bmi-table h4 {
+        font-size: 20px;
+        font-weight: 900;
         padding-bottom: 2rem;
+        padding-top: 2rem;
     }
 
-    .bmi-cal-content input[type="text"]:nth-child(1) {
+    .bmi-cal-content input[type="text"]:first-child {
         grid-column: span 1;
-        max-width: 170px;
+        max-width: 155px;
     }
 
     .bmi-cal-content input[type="text"]:nth-child(2) {
         grid-column: span 1;
-        max-width: 170px;
+        max-width: 157px;
     }
 
     .bmi-cal-content input[type="text"]:nth-child(3) {
         grid-column: span 1;
-        max-width: 170px;
+        max-width: 160px;
     }
 
     .bmi-cal-content select:nth-child(4) {
         grid-column: span 1;
-        max-width: 170px;
+        /* max-width: 150px; */
 
     }
 
     .bmi-cal-content select:nth-child(5) {
         grid-column: span 2;
-        max-width: 350px;
+        /* max-width: 350px; */
+    }
+
+    .bmi-table {
+        padding: 0;
+    }
+
+    .bmi-cal-content {
+        gap: 5px;
+    }
+
+    .bmi-text {
+        max-width: 67%;
     }
 
 
@@ -861,11 +854,6 @@ select {
         height: 250px;
     }
 
-    .team-text {
-        top: 15rem;
-        left: 1rem;
-    }
-
     .team-text h5 {
         font-size: 20px;
     }
@@ -919,10 +907,6 @@ select {
 
     .reason-h4 {
         font-size: 28px;
-    }
-
-    .reason-p {
-        font-size: 14px;
     }
 
     .reason-h2 h2 {
@@ -981,7 +965,7 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 
     .fit-text {
