@@ -526,9 +526,10 @@ h5 {
 
 /* bmi calculator */
 .bmi-header {
-    text-align: start;
+    text-align: center  ;
 
 }
+
 
 .bmi {
     background: rgb(34, 34, 34);
@@ -578,7 +579,9 @@ h5 {
 
 }
 
-table,td,th{
+table,
+td,
+th {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
 
@@ -972,7 +975,7 @@ footer {
     padding: 2rem;
 }
 
-hr{
+hr {
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 80%;
     margin: 0 auto;
